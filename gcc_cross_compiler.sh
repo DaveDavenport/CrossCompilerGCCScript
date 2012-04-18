@@ -146,7 +146,7 @@ build $GCC "--enable-languages=c --disable-nls --without-headers --disable-multi
 
 echo "Building newlib"
 extract "$NEWLIB_FILE" "$NEWLIB"
-build $NEWLIB "" ""
+build $NEWLIB "--enable-newlib-hw-fp" ""
 
 
 echo "Building gcc,g++ stage2"
