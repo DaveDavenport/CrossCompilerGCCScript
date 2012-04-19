@@ -80,7 +80,7 @@ function build()
 		make distclean
 	fi
 
-	../configure --target=$TARGET  --prefix=/opt/mb-gcc/ --program-prefix=$PROGRAM_PREFIX --prefix=$INSTALL_DIR $2
+	../configure --target=$TARGET  --program-prefix=$PROGRAM_PREFIX --prefix=$INSTALL_DIR $2
 	if [ $? != 0 ]
 	then
 		echo "Failed to configure"
